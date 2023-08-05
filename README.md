@@ -17,9 +17,9 @@ make start
 ## Accsessing Elasticsearch from curl command
 
 ```sh
-docker cp elasticstack-es01-1:/usr/share/elasticsearch/config/certs/ca/ca.crt /tmp/.
-curl --cacert /tmp/ca.crt -u elastic:changeme https://localhost:9200
-
+docker cp getting-started-with-elasticstack-es01-1:/usr/share/elasticsearch/config/certs/ca/ca.crt /tmp/.
+alias curl="/usr/bin/curl -H 'Content-type: application/json' --cacert /tmp/ca.crt -u elastic:changeme" 
+curl https://localhost:9200
 ```
 
 ## Commands
