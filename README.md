@@ -2,7 +2,7 @@
 
 ## Getting Started
 
-```
+```sh
 git clone git@github.com:KunihikoKido/getting-started-with-elasticstack
 cd getting-started-with-elasticstack
 make start
@@ -16,7 +16,7 @@ make start
 
 ## Accsessing Elasticsearch from curl command
 
-```
+```sh
 docker cp elasticstack-es01-1:/usr/share/elasticsearch/config/certs/ca/ca.crt /tmp/.
 curl --cacert /tmp/ca.crt -u elastic:changeme https://localhost:9200
 
@@ -24,7 +24,7 @@ curl --cacert /tmp/ca.crt -u elastic:changeme https://localhost:9200
 
 ## Commands
 
-```
+```sh
 % make      
 usage: make [target] ...
 
